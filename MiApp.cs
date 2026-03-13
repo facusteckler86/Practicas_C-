@@ -1,23 +1,19 @@
-class Programa
-{
-    static void Main(string[] args)
-    {
-        Persona persona1 = new Persona();
-        persona1.SetNombre("Facundo");
-        persona1.SetApellido("Steckler");
-        persona1.SetEdad(39);
-        persona1.SetMail("facundomsteckler@gmail.com"); 
-    }
-}
 
+Persona persona1 = new Persona();
+persona1.SetNombre("Facundo");
+persona1.SetApellido("Steckler");
+persona1.SetEdad(39);
+persona1.SetMail("facundomsteckler@gmail.com");
+
+Console.WriteLine(persona1.Saludar())
 
 public class Persona
 {
 
-    private string nombre;
-    private string apellido;
+    private string? nombre;
+    private string? apellido;
     private int edad;
-    private string mail;
+    private string? mail;
 
     public void SetNombre(string nombre)
     {
@@ -40,12 +36,14 @@ public class Persona
 
     }
 
-    public static Saludar()
-    {
-        return $"Hola, mi nombre es {this.nombre}{this.apellido}, tengo {this.edad} y mi mail es {this.edad} ";
-    }
+  public string Saludar()
+{
+    
+    return $"Hola, mi nombre es {this.nombre} {this.apellido}, tengo {this.edad} años y mi mail es {this.mail}";
+}
 
 }
+
 
 
 
