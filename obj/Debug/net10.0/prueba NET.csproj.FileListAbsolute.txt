@@ -1,0 +1,5 @@
+C:\Users\FACUNDO\Desktop\prueba NET\obj\Debug\net10.0\prueba NET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\FACUNDO\Desktop\prueba NET\obj\Debug\net10.0\prueba NET.AssemblyInfoInputs.cache
+C:\Users\FACUNDO\Desktop\prueba NET\obj\Debug\net10.0\prueba NET.AssemblyInfo.cs
+C:\Users\FACUNDO\Desktop\prueba NET\obj\Debug\net10.0\prueba NET.csproj.CoreCompileInputs.cache
+C:\Users\FACUNDO\Desktop\prueba NET\obj\Debug\net10.0\prueba NET.sourcelink.json
