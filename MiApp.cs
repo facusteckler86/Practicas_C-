@@ -8,6 +8,15 @@ persona1.SetMail("facundomsteckler@gmail.com");
 
 Console.WriteLine(persona1.Saludar());
 
+Visitante visitante1 = new Visitante();
+
+visitante1.SetNombre("Juan");
+visitante1.SetApellido("Perez");
+visitante1.SetEdad(18);
+visitante1.SetMail("juanperez@mail.com");
+
+Console.WriteLine(visitante1.Saludar());
+
 
 public class Persona
 {
@@ -51,6 +60,12 @@ public class Profesor : Persona
         get { return numeroDeLegajo; }
         set { numeroDeLegajo = value; }
     }
+    
+}
+
+// Clase del dia 17/03/2026
+public class Visitante : Persona
+{
     
 }
 
