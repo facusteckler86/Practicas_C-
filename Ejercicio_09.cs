@@ -1,9 +1,3 @@
-Robot Robotina = new Robot("Robotina", new RuedaDeCaucho(), 100);
-Console.WriteLine(Robotina.MostrarInformacion());
-Robotina.Recorrer(10);
-Console.WriteLine(Robotina.MostrarInformacion());
-Robotina.Recorrer(15000);
-Console.WriteLine(Robotina.MostrarInformacion());
 
 
 public class Robot
@@ -86,6 +80,19 @@ public class Oruga : TipoTraccion
     {
         this.DesgastePorUso = 3;
         this.Autonomia = 400;
+    }
+}
+
+public static class RobotDemo
+{
+    public static void Run()
+    {
+        Robot Robotina = new Robot("Robotina", 100, new RuedaDeCaucho());
+        Console.WriteLine(Robotina.MostrarInformacion());
+        Robotina.Recorrer(10);
+        Console.WriteLine(Robotina.MostrarInformacion());
+        Robotina.Recorrer(15000);
+        Console.WriteLine(Robotina.MostrarInformacion());
     }
 }
 
