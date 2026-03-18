@@ -1,4 +1,4 @@
-Persona persona1 = new Alumno(); 
+Persona persona1 = new Alumno();
 
 persona1.SetNombre("Facundo");
 persona1.SetApellido("Steckler");
@@ -8,6 +8,8 @@ persona1.SetMail("facundomsteckler@gmail.com");
 
 Console.WriteLine(persona1.Saludar());
 
+// Objeto visitante (ejrecicio 08)
+
 Visitante visitante1 = new Visitante();
 
 visitante1.SetNombre("Juan");
@@ -16,6 +18,17 @@ visitante1.SetEdad(18);
 visitante1.SetMail("juanperez@mail.com");
 
 Console.WriteLine(visitante1.Saludar());
+
+// Objeto guardia (ejrecicio 08)
+
+Guardia guardia1 = new Guardia();
+guardia1.SetNombre("Marcelo");
+guardia1.SetApellido("Perez");
+guardia1.SetEdad(25);
+guardia1.SetMail("marceperez@mail.com");
+
+Console.WriteLine(guardia1.Saludar());
+
 
 
 public class Persona
@@ -31,7 +44,7 @@ public class Persona
     public void SetEdad(int edad) => this.edad = edad;
     public void SetMail(string mail) => this.mail = mail;
 
-   
+
     public string Saludar()
     {
         return $"Hola, mi nombre es {this.nombre} {this.apellido}, tengo {this.edad} años y mi mail es {this.mail}";
@@ -49,7 +62,7 @@ public class Alumno : Persona
         get { return numeroDeMatricula; }
         set { numeroDeMatricula = value; }
     }
-    
+
 }
 
 public class Profesor : Persona
@@ -60,13 +73,19 @@ public class Profesor : Persona
         get { return numeroDeLegajo; }
         set { numeroDeLegajo = value; }
     }
-    
+
 }
 
 // Clase del dia 17/03/2026
 public class Visitante : Persona
 {
-    
+
+}
+
+// Creo la clase guardia como lo indica el ejercicio 08
+public class Guardia : Persona
+{
+
 }
 
 
