@@ -8,5 +8,13 @@ public class Docente : Persona
         get { return _materia; }
         set { _materia = value; }
     }
+
+        private int numeroDeLegajo;
+    public int Legajo
+    {
+        get { return numeroDeLegajo; }
+        set { numeroDeLegajo = value; }
+    }
+
+} 
     
-}

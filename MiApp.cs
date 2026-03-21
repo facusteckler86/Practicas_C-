@@ -1,17 +1,8 @@
-// Console.WriteLine("mi primer linea en C#");
 
-using Persona.Dominio;
+namespace Persona.Dominio;
 
 public class Profesor : Persona
 {
-    private int numeroDeLegajo;
-    public int Legajo
-    {
-        get { return numeroDeLegajo; }
-        set { numeroDeLegajo = value; }
-    }
-
-}
 
 // Clase del dia 17/03/2026
 public class Visitante : Persona
@@ -68,4 +59,4 @@ public static class MiAppDemo
         Console.WriteLine(guardia1.ControlarDocumento(visitante1.GetDni(), visitante1.GetNombre()));
     }
 }
-
+}
