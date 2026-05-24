@@ -1,4 +1,7 @@
+// Single Responsability: responsabilidad unica. 
+
 using System;
+
 
 public class Book
 {
